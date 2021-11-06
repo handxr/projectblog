@@ -21,6 +21,7 @@ const PostWidget = ({categories, slug}) => {
     
     return (
         <div className="cardwidget bg-white shadow-lg rounded-lg p-8 mb-8">
+            
             <h3 className="text-xl mb-8 font-semibold border-b border-gray-400 pb-4">
                 {slug ? 'Posts Relacionados' : 'Posts Recientes'}
             </h3>
