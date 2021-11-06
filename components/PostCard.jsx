@@ -14,6 +14,7 @@ const PostCard = ({ post }) => {
       <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
       <Image
         unoptimized
+        priority
         loader={grpahCMSImageLoader}
         alt={post.title}
         className="shadow-lg rounded-t-lg lg:rounded-lg"
