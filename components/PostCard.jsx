@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import Image from 'next/image';
 
-import { grpahCMSImageLoader } from '../util';
+// import { grpahCMSImageLoader } from '../util';
 
 const PostCard = ({ post }) => {
 
@@ -15,7 +15,7 @@ const PostCard = ({ post }) => {
       <Image
         unoptimized
         priority
-        loader={grpahCMSImageLoader}
+        // loader={grpahCMSImageLoader}
         alt={post.title}
         className="shadow-lg rounded-t-lg lg:rounded-lg"
         layout="fill"
