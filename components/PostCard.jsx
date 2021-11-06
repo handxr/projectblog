@@ -39,11 +39,11 @@ const PostCard = ({ post }) => {
             className="align-middle rounded-full"
             src={post.author.photo.url}
           />
-          <p className="inline align-middle text-gray-700 ml-2 text-lg">
+          <p className="inline align-middle text-gray-400 ml-2 text-lg">
             {post.author.name}
           </p>
         </div>
-        <div className="font-medium text-gray-700">
+        <div className="font-medium text-gray-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 inline mr-2 text-pink-500"
