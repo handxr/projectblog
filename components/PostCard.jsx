@@ -10,7 +10,7 @@ const PostCard = ({ post }) => {
 
 
   return (
-    <div className="cards shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
+    <div className="cards shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8 border border-gray-700 hover:border-gray-400">
       <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
       <Image
         unoptimized
