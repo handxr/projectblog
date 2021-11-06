@@ -14,10 +14,10 @@ const Categories = () => {
 
   return (
     <div className="cardcategory bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Categorías</h3>
+      <h3 className="text-xl mb-8 font-semibold border-gray-400 border-b pb-4">Categorías</h3>
       {categories.map((category, index) => (
         <Link key={index} href={`/category/${category.slug}`}>
-          <span className={`cursor-pointer block ${(index === categories.length - 1) ? 'border-b-0' : 'border-b'} pb-3 mb-3`}>{category.name}</span>
+          <span className={`cursor-pointer block ${(index === categories.length - 1) ? 'border-b-0' : 'border-b border-gray-600 '} pb-3 mb-3`}>{category.name}</span>
         </Link>
       ))}
     </div>
