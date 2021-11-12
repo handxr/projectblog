@@ -31,9 +31,6 @@ export default async function comments(req, res) {
       ) {
         id
       }
-      publishManyComments{
-        count
-      }
     }
   `;
   try {

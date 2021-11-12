@@ -75,7 +75,7 @@ const CommentsForm = ({ slug }) => {
   };
 
   return (
-    <div className="cards bg-white shadow-lg rounded-lg p-8 pb-12 mb-8 border border-gray-700 hover:border-gray-400">
+    <div className="cards bg-lightcard dark:bg-darkcard shadow-lg rounded-lg p-8 pb-12 mb-8 dark:border dark:border-gray-700 dark:hover:border-gray-400">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">Deja un comentario</h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
         <textarea value={formData.comment || ''} onChange={onInputChange} className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" name="comment" placeholder="Comment" />
@@ -93,7 +93,7 @@ const CommentsForm = ({ slug }) => {
       {error && <p className="text-xs text-red-500">Todos los campos son obligatorios</p>}
       <div className="mt-8">
         <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Publicar comentario</button>
-        {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-500">Comentario publicado</span>}
+        {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-500">Comentario pendiente de revisión</span>}
       </div>
     </div>
   );
